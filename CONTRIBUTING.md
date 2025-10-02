@@ -11,6 +11,7 @@ Dokumen ini berisi panduan teknis untuk menjaga konsistensi kode dan struktur fo
 -   Minimal setiap fitur punya **1 file wrapper utama** (`feature-wrapper.tsx`).
 -   Sub-folder (`components`, `apis`, `hooks`, `types`) hanya dibuat jika fitur cukup kompleks.
 
+```bash
 project-root/
 ├── app/ # Default Next.js app directory
 ├── components/ # Global reusable components
@@ -26,6 +27,7 @@ project-root/
 ├── drizzle.config.ts # Konfigurasi Drizzle ORM
 ├── next.config.js # Konfigurasi Next.js
 └── tsconfig.json # Konfigurasi TypeScript
+```
 
 ---
 
@@ -33,11 +35,13 @@ project-root/
 
 Contoh: `features/about`
 
+```bash
 features/
 └── about/
 ├── about-wrapper.tsx # komponen utama halaman
 ├── hooks.ts # optional
 └── types.ts # optional
+```
 
 Gunakan **flat structure** untuk:
 
@@ -51,6 +55,7 @@ Gunakan **flat structure** untuk:
 
 Contoh: `features/home`
 
+```bash
 features/
 └── home/
 ├── components/
@@ -65,6 +70,7 @@ features/
 ├── types/
 │ └── home.d.ts
 └── index.ts
+```
 
 Gunakan **nested structure** untuk:
 
